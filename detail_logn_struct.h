@@ -904,7 +904,7 @@ namespace detail
                 throw std::out_of_range("logn_struct:_M_range_check");
         }
 
-    private:
+    public:
 
         reverse_iterator
         rbegin()
@@ -954,6 +954,8 @@ namespace detail
             return *rbegin();
         }
 
+private:
+    
         bool
         empty() const
         { return _Rep_type::empty(); }
